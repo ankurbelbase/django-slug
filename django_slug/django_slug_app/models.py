@@ -7,7 +7,7 @@ class Post(models.Model):
 	name = models.CharField(max_length = 20)
 	title = models.CharField(max_length = 20)
 	sub_title = models.CharField(max_length = 20)
-	slug = models.SlugField(unique = True, null = True)
+	slug = models.SlugField(unique = True)
 	
 	def __str__(self):
 		return self.name
